@@ -41,3 +41,14 @@ for i in range(0,3):
     
 for PERSON in PEOPLE:
     PERSON.show()
+    
+    #Changing Atributes and methods of the class
+    print ('Line 46 ' + str(PEOPLE))
+    print ('Line 47 ' + str(PEOPLE[0]))
+    print ('Line 48 ' + str(PEOPLE[0].__dict__))
+    print ('Line 49 ' + str(PEOPLE[0].__dict__.keys()))
+    print ('Line 50 ' + str(PEOPLE[0].__dict__.values))
+    PEOPLE[0]._Person__age = 'BlaBlaBla'
+    print ('Line 51 ' + str(PEOPLE[0]._Person__age))
+    PEOPLE[0]._Person__Nickname = 'CoolPerson'
+    print ('Line 52 ' + str(PEOPLE[0].__dict__))
